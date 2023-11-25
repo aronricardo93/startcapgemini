@@ -1,0 +1,25 @@
+<table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Stack</th>
+        <th scope="col">Região</th>
+        <th scope="col">Ver</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let start of starts">
+        <td>{{start.id}}</td>
+        <td>{{start.nome}}</td>
+        <td>{{start.stack}}</td>
+        <td>{{start.regiao}}</td>
+        <td><button class="btn btn-outline-primary" routerLink="dados/{{start.id}}"><i class="far fa-eye"></i></button></td>
+        <td><button class="btn btn-outline-warning" routerLink="editar/{{start.id}}"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button class="btn btn-outline-danger" (click)="deletar(start.id)"><i class="fa-solid fa-trash-can"></i></button></td>
+      </tr>
+    </tbody>
+  </table>

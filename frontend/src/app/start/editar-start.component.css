@@ -1,0 +1,16 @@
+img{
+    width: 300px;
+    margin: 0 10px auto;
+    text-align: center;
+}
+
+input{
+    margin: 5px auto;
+    font-weight: bold;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+button{
+    margin-top: 5px;
+}

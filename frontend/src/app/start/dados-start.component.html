@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row mt-5" *ngIf="start">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header text-center">
+          Dados
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item bg-dark text-white"><b>ID: </b>{{start.id}}</li>
+            <li class="list-group-item bg-dark text-white"><b>Nome: </b>{{start.nome}}</li>
+            <li class="list-group-item bg-dark text-white"><b>Stack: </b>{{start.stack}}</li>
+            <li class="list-group-item bg-dark text-white"><b>Região: </b>{{start.regiao}}</li>
+          </ul>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button" (click)="btnVoltar()"><i class="fa-solid fa-circle-left"></i>Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
