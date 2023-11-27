@@ -8,7 +8,7 @@ import { Start } from '../models/Start';
 })
 export class StartService {
 
-  private startUrl = 'http://localhost:8080/api/start';
+  private startUrl = 'https://back-start-render.onrender.com/api/start';
 
   constructor(private httpClient: HttpClient) { }
 
